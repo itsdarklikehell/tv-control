@@ -35,10 +35,7 @@ echo "Thank you fot using this script."
 ####	EXEC	####
 CONFIG
 
-while
-do
-CHOICE=$(
-whiptail --title "Menu example" --menu "Choose an option" 25 78 16 \
+CHOICE=$(whiptail --title "Menu example" --menu "Choose an option" 25 78 16 \
 	"On" "Switch tv on." \
 	"Off" "Switch tv off." \
 	"Status" "Check tv status." \
@@ -65,6 +62,4 @@ if [ $CHOICE = "Exit" ];
 then
 EXIT
 fi
-done
-esac
 ####	EXEC END	####
