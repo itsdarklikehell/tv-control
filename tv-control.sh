@@ -3,12 +3,13 @@
 ####	CONFIG	####
 CONFIG(){
 VOICE="flite" #use flite, festival or espeak
+CEC-CLIENT="cec-client RPI -s -d 1"
 }
 ####	CONFIG END	####
 
 TVON(){
 echo "Switching tv on" | tee >($VOICE)
-echo "on 0" | cec-client RPI -s -d 1
+echo "on 0" | $CEC-CLIENT
 TVSTAT
 }
 
