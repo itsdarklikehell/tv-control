@@ -1,0 +1,16 @@
+# Test artifacts
+*.log
+test-results/
+
+# Editor files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Gource output
+gource/
+gource.mp4
+
+# Docker
+.dockerignore
